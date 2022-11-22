@@ -1,4 +1,4 @@
-# New derived class for ws2812b.py
+# Derived class from ws2812b.py
 Original by https://github.com/benevpi/pico_python_ws2812b
 
 # pico_ws2812b
