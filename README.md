@@ -12,9 +12,10 @@ You'll first need to save the three files ws2812b.py, my_ws2812b.py and optional
 
 You create an object with the parameters number of LEDs, state machine ID and GPIO number in that order. so, to create a strip of 10 leds on state machine 0 and GPIO 0, you use:
 
+
+```
 import my_ws2812b
 import my_rgb_colors
-```
 strip = my_ws2812b.my_ws2812b(10,0,0)
 ```
 
