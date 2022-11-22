@@ -27,11 +27,11 @@ class my_ws2812b(ws2812b.ws2812b):
     
     def set_pixel2(self, pixel_num, p_color, p_brightness = None):
         if p_brightness == None:
-            self.set_pixel3(pixel_num, round(float(p_color[0])), round(float(p_color[1])), round(float(p_color[2])))
+            self.set_pixel3(pixel_num, p_color[0], p_color[1], p_color[2])
         else:
             if p_brightness < 0:
                 p_brightness = 0
-            self.set_pixel3(pixel_num, round(float(p_color[0])), round(float(p_color[1])), round(float(p_color[2])), p_brightness)
+            self.set_pixel3(pixel_num, p_color[0], p_color[1], p_color[2], p_brightness)
     
     def set_pixel_line2(self, pixel1, pixel2, p_color):
         for i in range(pixel1, pixel2+1):
